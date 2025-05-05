@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIRISS GROUP| Accueil</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    
+</head>
+<body>
+  <header>
+    <div class="top-header">
+      <img src="../images/logo.png" alt="Logo Liriss Group" class="logo" style=" width: 150px;height: 150px;" />
+      <div class="contact">
+        📍 Abidjan | Yamoussoukro | Maroc<br>
+        📞 +225 07 48 43 52 20 | ✉️ lirissgroup@gmail.com
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../html/Accueil.html" >Accueil</a></li>
+        <li><a href="../html/services.html">Services</a></li>
+        <li><a href="../html/apropos.html">À propos</a></li>
+        <li><a href="../html/rdv.html">Rendez-vous</a></li>
+        <li><a href="../html/blog.html"  class="cta">Blogs</a></li>
+      </ul>
+    </nav>
+   
+  </header>
+    <section style="padding: 60px 20px; background-color: #fafafa; font-family: Arial, sans-serif;">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #222; margin-bottom: 40px;">Notre Blog</h2>
+      
+        <!-- Filtres par catégorie -->
+        <div style="text-align: center; margin-bottom: 30px;">
+          <button onclick="filterArticles('all')" style="margin: 5px; padding: 8px 15px; border: none; border-radius: 20px; background-color:#a02f54; color: #fff;">Tous</button>
+          <button onclick="filterArticles('immobilier')" style="margin: 5px; padding: 8px 15px; border: none; border-radius: 20px;">Immobilier</button>
+          <button onclick="filterArticles('etudes')" style="margin: 5px; padding: 8px 15px; border: none; border-radius: 20px;">Visa & Études</button>
+          <button onclick="filterArticles('business')" style="margin: 5px; padding: 8px 15px; border: none; border-radius: 20px;">Terrain</button>
+        </div>
+      
+        <!-- Articles -->
+        <div id="blog-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+          
+          <!-- Article 1 -->
+          <div class="blog-card immobilier" style="width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); overflow: hidden;">
+            <img src="../images/blog1.jpg" alt="Article 1" style="width: 100%; height: 180px; object-fit: cover;">
+            <div style="padding: 20px;">
+              <h3>5 Conseils pour Réussir son Projet Immobilier</h3>
+              <p style="color: #555;">Découvrez nos astuces clés pour bien investir dans l'immobilier.</p>
+              <a href="../html/blog1.html" style="color:#a02f54; font-weight: bold;">Lire plus →</a>
+            </div>
+          </div>
+      
+          <!-- Article 2 -->
+          <div class="blog-card etudes" style="width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); overflow: hidden;">
+            <img src="../images/blog 2.jpg" alt="Article 2" style="width: 100%; height: 180px; object-fit: cover;">
+            <div style="padding: 20px;">
+              <h3>Étudier au Canada : Étapes et Opportunités</h3>
+              <p style="color: #555;">Tout ce qu’il faut savoir pour préparer vos études à l’étranger.</p>
+              <a href="../html/blog2.html" style="color:#a02f54; font-weight: bold;">Lire plus →</a>
+            </div>
+          </div>
+          
+      
+          <!-- Article 3 -->
+          <div class="blog-card business" style="width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); overflow: hidden;">
+            <img src="../images/terrain1.jpg" alt="Article 3" style="width: 100%; height: 180px; object-fit: cover;">
+            <div style="padding: 20px;">
+              <h3>Yamoussoukro, Assinie, Jacqueville et Bonoua</h3>
+              <p style="color: #555;">Acquisition,Lotissement  de terrain en toute  sécurité</p>
+              <a href="../html/blog3.html" style="color: #a02f54; font-weight: bold;">Lire plus →</a>
+            </div>
+          </div>
+
+          <div class="blog-card business" style="width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); overflow: hidden;">
+            <img src="../images/terrain3.jpg" alt="Article 3" style="width: 100%; height: 180px; object-fit: cover;">
+            <div style="padding: 20px;">
+              <h3>Vendre un terrain en toute sécurité : les étapes clés à suivre</h3>
+              <p style="color: #555;">La vente d’un terrain, qu’il soit nu ou constructible, représente une opération immobilière à fort enjeu. Que vous soyez particulier ou promoteur, il est crucial de connaître les bonnes pratiques pour vendre efficacement, au bon prix, et dans un cadre légal sécurisé. Voici notre guide pas à pas pour mener votre vente de terrain dans les meilleures conditions.</p>
+              <a href="../html/blog4.html" style="color: #a02f54; font-weight: bold;">Lire plus →</a>
+            </div>
+          </div>
+
+          <div class="blog-card etudes" style="width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); overflow: hidden;">
+            <img src="../images/côte d'voire.jpg" alt="Article 3" style="width: 100%; height: 180px; object-fit: cover;">
+            <div style="padding: 20px;">
+              <h3>Voyager sereinement en Côte d’Ivoire : opter pour une location professionnelle</h3>
+              <p style="color: #555;">La Côte d’Ivoire est un pays dynamique, riche en culture, en opportunités économiques et en paysages variés. Que vous soyez en déplacement professionnel, en voyage d’affaires ou en séjour touristique, la question de la mobilité est essentielle. Face aux défis des transports urbains, opter pour une location de voiture professionnelle s’impose comme la solution idéale pour un séjour sans stress. Découvrez pourquoi et comment faire le bon choix.</p>
+              <a href="../html/blog5.html" style="color: #a02f54; font-weight: bold;">Lire plus →</a>
+            </div>
+          </div>
+          <div class="blog-card immobilier" style="width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); overflow: hidden;">
+            <img src="../images/résidence haut standing.jpg" alt="Résidence haut standing" style="width: 100%; height: 180px; object-fit: cover;">
+            <div style="padding: 20px;">
+              <h3>Logement</h3>
+              <p style="color: #555;">Dans cet article, nous explorons les avantages d’investir dans un logement haut standing et les critères à considérer avant l’achat.</p>
+              <a href="../html/blog6.html" style="color: #a02f54; font-weight: bold;">Lire plus →</a>
+            </div>
+          </div>
+      
+        </div>
+      
+        <!-- Bouton Voir tous les articles -->
+      
+      </section>
+      
+      <footer>
+        <div id="footer-top">
+            <div id="infos">
+                <div>
+                    <img src="../images/logo ( liriss group).jpg" alt="Logo Liriss Group">
+                    <span>LIRISS GROUP</span>
+                </div>
+    
+                <div style="font-size: 13px;">
+                    <h3>Adresses</h3>
+    
+                    <div>
+                        <h4>Abidjan</h4>
+                        <address>
+                            <p>Email : <a href="mailto:groupliriss@gmail.com">groupliriss@gmail.com</a></p>
+                            <p>Téléphone : 05 85 40 68 68 / 07 48 43 52 20</p>
+                            <p>Fixe : 27 22 31 93 69 / 27 35 98 50 92</p>
+                        </address>
+                    </div>
+    
+                    <div>
+                        <h4>Maroc</h4>
+                        <address>
+                            <p>Email : <a href="mailto:lirissgroupmaroc@gmail.com">lirissgroupmaroc@gmail.com</a></p>
+                            <p>Téléphone : +212 771 211 427</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="lien_rapide">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="../html/Accueil.html">Accueil ></a></li>
+                    <li><a href="../html/apropos.html">À propos ></a></li>
+                    <li><a href="../html/services.html">Nos services ></a></li>
+                    <li><a href="../html/rdv.html">Prendre Rendez-vous ></a></li>
+                    <li><a href="../html/blog.html">Blog ></a></li>
+                   
+                </ul>
+            </div>
+    
+            <div id="contact">
+                <h3>Contact</h3>
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Votre Email" required>
+                    <button type="submit">Envoyer</button>
+                </form>
+    
+                <div class="reseaux">
+                    <a href="https://www.linkedin.com/in/liriss-group-65aa20358" target="_blank">
+                        <img src="../images/linkedin (1).png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.tiktok.com/@lirissgroup" target="_blank">
+                        <img src="../images/tic-tac.png" alt="TikTok">
+                    </a>
+                    <a href="https://web.facebook.com/lirissshop" target="_blank">
+                        <img src="../images/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="footer-right">
+            &copy; Tous droits réservés
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/2250748435220?text=Bonjour%20Liriss%20Group%2C%20je%20souhaite%20plus%20d'informations." target="_blank" id="whatsapp-button">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+    </a>
+    </body>
+    </body>
+    </html>
+    

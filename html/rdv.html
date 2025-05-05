@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIRISS GROUP| Accueil</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="top-header">
+      <img src="../images/logo.png" alt="Logo Liriss Group" class="logo" style=" width: 150px;height: 150px;" />
+      <div class="contact">
+        📍 Abidjan | Yamoussoukro | Maroc<br>
+        📞 +225 07 48 43 52 20 | ✉️ lirissgroup@gmail.com
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../html/Accueil.html">Accueil</a></li>
+        <li><a href="../html/services.html">Services</a></li>
+        <li><a href="../html/apropos.html"  >À propos</a></li>
+        <li><a href="../html/rdv.html" class="cta">Rendez-vous</a></li>
+        <li><a href="../html/blog.html" >Blogs</a></li>
+      </ul>
+    </nav>
+   
+  </header>
+    <!-- Section de présentation -->
+<section style="padding: 40px 20px; background-color: #f9f9f9;">
+  <h1 style="text-align: center; font-size: 2.5rem; color: #1a1a1a; font-weight: bold;">Prendre Rendez-vous</h1>
+  <p style="text-align: center; font-size: 1.1rem; color: #444;">Choisissez un service et l'agence de votre choix</p>
+  <div style="text-align: center; margin: 30px 0;">
+    <img src="../images/rdv.jpg" alt="Prendre Rendez-vous" style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 6px 18px rgba(0,0,0,0.1);">
+  </div>
+</section>
+
+<!-- Section Formulaire + Infos agences -->
+<section style="padding: 60px 20px; background-color: #fff; font-family: 'Arial', sans-serif;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; align-items: flex-start;">
+
+    <!-- Formulaire -->
+    <div style="flex: 1; min-width: 300px; max-width: 520px; border: 1px solid #ccc; border-radius: 16px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); background-color: #fafafa;">
+      <h2 style="text-align: center; font-style: italic; color: #2c3e50; margin-bottom: 25px;">Nous Contacter</h2>
+
+      <form action="https://formsubmit.co/lirissgroup2025@gmail.com" method="POST">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+          <input type="text" name="Nom" placeholder="Nom" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ccc;" required>
+          <input type="text" name="Prénom" placeholder="Prénom" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ccc;" required>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+          <input type="email" name="Email" placeholder="Email" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ccc;" required>
+          <input type="text" name="Téléphone" placeholder="WhatsApp / Téléphone" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ccc;" required>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+          <select name="Service" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc;" required>
+            <option disabled selected>Choisir un service</option>
+            <option>Immobilier</option>
+            <option>Import-Export</option>
+            <option>Automobile</option>
+            <option>Visa / Études</option>
+            <option>Formations</option>
+            <option>Achats de terrains</option>
+            <option>Hôtesse événementielle</option>
+          </select>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+          <input type="date" name="Date de rendez-vous" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ccc;" required>
+          <select name="Lieu" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ccc;" required>
+            <option disabled selected>Choisir un lieu</option>
+            <option>Abidjan</option>
+            <option>Yamoussoukro</option>
+            <option>Maroc</option>
+          </select>
+        </div>
+
+        <!-- Champs cachés -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://lirissgroup.com/merci.html">
+
+        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+          <button type="reset" style="padding: 10px 20px; background-color: #e74c3c; color: white; border: none; border-radius: 8px; cursor: pointer;">Annuler</button>
+          <button type="submit" style="padding: 10px 20px; background-color: #27ae60; color: white; border: none; border-radius: 8px; cursor: pointer;">Envoyer</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Infos Agences -->
+    <div style="flex: 1; min-width: 250px; max-width: 350px;">
+      <h2 style="font-style: italic; color: #2c3e50; margin-bottom: 20px;">Nos Agences</h2>
+
+      <div style="background: #f4f4f4; border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+        <p><strong>Abidjan</strong><br>
+          Fixe : 27 22 31 93 69<br>
+          Portable : 05 85 40 68 68 / 07 48 43 52 20</p>
+      </div>
+
+      <div style="background: #f4f4f4; border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+        <p><strong>Yamoussoukro</strong><br>
+          Fixe : 27 35 98 50 92<br>
+          Portable : 07 00 33 33 94</p>
+      </div>
+
+      <div style="background: #f4f4f4; border-radius: 12px; padding: 20px;">
+        <p><strong>Maroc</strong><br>
+          Mobile : +212 771 211 427</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      
+      <footer>
+        <div id="footer-top">
+            <div id="infos">
+                <div>
+                    <img src="../images/logo ( liriss group).jpg" alt="Logo Liriss Group">
+                    <span>LIRISS GROUP</span>
+                </div>
+    
+                <div style="font-size: 13px;">
+                    <h3>Adresses</h3>
+    
+                    <div>
+                        <h4>Abidjan</h4>
+                        <address>
+                            <p>Email : <a href="mailto:groupliriss@gmail.com">groupliriss@gmail.com</a></p>
+                            <p>Téléphone : 05 85 40 68 68 / 07 48 43 52 20</p>
+                            <p>Fixe : 27 22 31 93 69 / 27 35 98 50 92</p>
+                        </address>
+                    </div>
+    
+                    <div>
+                        <h4>Maroc</h4>
+                        <address>
+                            <p>Email : <a href="mailto:lirissgroupmaroc@gmail.com">lirissgroupmaroc@gmail.com</a></p>
+                            <p>Téléphone : +212 771 211 427</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="lien_rapide">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="../html/Accueil.html">Accueil ></a></li>
+                    <li><a href="../html/apropos.html">À propos ></a></li>
+                    <li><a href="../html/services.html">Nos services ></a></li>
+                    <li><a href="../html/rdv.html">Prendre Rendez-vous ></a></li>
+                    <li><a href="../html/blog.html">Blog ></a></li>
+                   
+                </ul>
+            </div>
+    
+            <div id="contact">
+                <h3>Contact</h3>
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Votre Email" required>
+                    <button type="submit">Envoyer</button>
+                </form>
+    
+                <div class="reseaux">
+                    <a href="https://www.linkedin.com/in/liriss-group-65aa20358" target="_blank">
+                        <img src="../images/linkedin (1).png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.tiktok.com/@lirissgroup" target="_blank">
+                        <img src="../images/tic-tac.png" alt="TikTok">
+                    </a>
+                    <a href="https://web.facebook.com/lirissshop" target="_blank">
+                        <img src="../images/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="footer-right">
+            &copy; Tous droits réservés
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/2250748435220?text=Bonjour%20Liriss%20Group%2C%20je%20souhaite%20plus%20d'informations." target="_blank" id="whatsapp-button">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+    </a>
+    </body>
+    </body>
+    </html>
+    
+    

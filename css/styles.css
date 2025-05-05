@@ -1,0 +1,422 @@
+:root {
+    --main-color: #a02f54;
+    --black: #000000;
+    --white: #ffffff;
+    --light-gray: #f7f7f7;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+  }
+
+  header {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow:black ;
+  }
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .contact {
+    text-align: right;
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    transition: background 0.3s;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.cta {
+    background-color: var(--main-color);
+    border-radius: 4px;
+  }
+
+  .hero {
+    background: url('../images/maison.jpeg') center/cover no-repeat;
+    color: var(--white);
+    text-align: center;
+    padding: 120px 20px;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .btn-primary {
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #87163f;
+  }
+
+  .about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .about-block {
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: left;
+  }
+  
+  .about-block h3 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .about-block p {
+    font-size: 0.95em;
+    color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .about-block {
+      width: 100%;
+    }
+  }
+  
+
+  section {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: var(--main-color);
+  }
+
+  .about, .social, .testimonials, .services {
+    text-align: center;
+  }
+
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .service-item {
+    width: 270px;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+  }
+
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-item img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+  }
+
+  .service-item h3 {
+    color: var(--main-color);
+    font-size: 1.2em;
+    margin: 15px 0 10px;
+  }
+
+  .service-item p {
+    padding: 0 15px 20px;
+    font-size: 0.95em;
+    color: #444;
+  }
+
+  blockquote {
+    font-style: italic;
+    color: #666;
+    margin: 20px auto;
+    max-width: 700px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-left: 5px solid var(--main-color);
+  }
+
+  .social a {
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .social a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    background-color: #f3f3f3;
+    color: #333;
+    padding: 40px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  #footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #infos, #lien_rapide, #contact {
+    flex: 1 1 280px;
+  }
+  
+  #infos img {
+    width: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  #infos span {
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  
+  #infos h3, #lien_rapide h3, #contact h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--black);
+  }
+  
+  #infos h4 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color:var(--black);
+  }
+  
+  #infos address p,
+  #infos a {
+    font-size: 14px;
+    color: var(--white);
+    margin: 2px 0;
+  }
+  
+  #lien_rapide ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #lien_rapide li {
+    margin: 8px 0;
+  }
+  
+  #lien_rapide a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+  }
+  
+  #lien_rapide a:hover {
+    color: #0073e6;
+    text-decoration: underline;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #contact input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  #contact button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #contact button:hover {
+    background-color: #005bb5;
+  }
+  
+  .reseaux {
+    margin-top: 15px;
+  }
+  .reseaux a
+  {
+    text-decoration: none;
+  }
+  .reseaux a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .reseaux a img:hover {
+    transform: scale(1.1);
+  }
+  footer{
+    background-color: var(--main-color);
+    color: var(--white);
+  }
+  #footer-right {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #888;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+  }
+  #partenaires {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  #partenaires h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .partenaires-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+  
+  .partenaires-logos img {
+    max-width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .partenaires-logos img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .partenaires-logos {
+      gap: 20px;
+    }
+  
+    .partenaires-logos img {
+      max-width: 90px;
+    }
+  }
+  
+  #whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  
+  #whatsapp-button img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  #whatsapp-button img:hover {
+    transform: scale(1.2);
+  }
+  
+ 
+  @media (max-width: 768px) {
+    #footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #infos, #lien_rapide, #contact {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .top-header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .service-list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .service-item {
+      width: 90%;
+    }
+  }
